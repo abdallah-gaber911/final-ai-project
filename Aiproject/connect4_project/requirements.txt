@@ -1,4 +1,0 @@
-# Optional dependencies for victory video playback
-# Core Connect 4 game engine and AI run with standard library only (zero dependencies)
-opencv-python>=4.8.0
-pillow>=10.0.0
