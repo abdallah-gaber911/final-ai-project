@@ -1,0 +1,146 @@
+/* ==========================================================================
+   CONNECT FOUR AI - Responsive Design
+   ========================================================================== */
+
+/* Laptop & Compact Desktop (<= 1200px) */
+@media (max-width: 1200px) {
+  .home-grid {
+    grid-template-columns: 260px 1fr 280px;
+    gap: var(--space-md);
+  }
+
+  .hover-preview-row {
+    grid-template-columns: repeat(7, 58px);
+    gap: 8px;
+  }
+
+  .board-slot {
+    width: 58px;
+    height: 58px;
+  }
+
+  .coin {
+    width: 50px;
+    height: 50px;
+  }
+
+  .coin-inner-ring {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ghost-coin {
+    width: 50px;
+    height: 50px;
+  }
+
+  .col-num {
+    width: 58px;
+  }
+
+  .board-columns-container {
+    gap: 8px;
+  }
+}
+
+/* Tablet (<= 992px) */
+@media (max-width: 992px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .center-panel {
+    order: 1;
+  }
+
+  .left-panel {
+    order: 2;
+  }
+
+  .right-panel {
+    order: 3;
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 0 var(--space-md);
+  }
+
+  .nav-item span {
+    display: none;
+  }
+}
+
+/* Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  .main-content {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .navbar {
+    height: 60px;
+  }
+
+  .brand-info span {
+    display: none;
+  }
+
+  /* Responsive Board Scaling */
+  .hover-preview-row {
+    grid-template-columns: repeat(7, 42px);
+    gap: 6px;
+    height: 40px;
+  }
+
+  .board-arena {
+    padding-top: 40px;
+  }
+
+  .board-columns-container {
+    gap: 6px;
+  }
+
+  .board-slot {
+    width: 42px;
+    height: 42px;
+    border-width: 2px;
+  }
+
+  .coin {
+    width: 36px;
+    height: 36px;
+  }
+
+  .coin-inner-ring {
+    width: 22px;
+    height: 22px;
+  }
+
+  .ghost-coin {
+    width: 36px;
+    height: 36px;
+  }
+
+  .col-num {
+    width: 42px;
+    font-size: 0.7rem;
+  }
+
+  .board-physical {
+    padding: 8px;
+    border-width: 6px;
+  }
+
+  .analytics-kpis {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .modal-dialog {
+    padding: var(--space-lg);
+  }
+}
